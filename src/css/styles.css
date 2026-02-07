@@ -70,18 +70,9 @@ button:disabled {
   width: fit-content;
  margin: 20px auto;  
 }
- /* .page-snackbar label{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
- }
-
-
-.form{
- display: flex;
-}  */
-
-/* Только для страницы Snackbar, чтобы не цепляло другие страницы */
+.page-snackbar .main-title {
+text-align: left;
+}
 .page-snackbar .form {
   width: 360px;
   display: flex;
@@ -89,7 +80,6 @@ button:disabled {
   gap: 16px;
 }
 
-/* Label: текст сверху, инпут ниже */
 .page-snackbar .form>label {
   display: flex;
   align-items: flex-start;
@@ -97,7 +87,6 @@ button:disabled {
   gap: 6px;
 }
 
-/* Инпут как на примере */
 .page-snackbar .form input[type="number"] {
   width: 250px;
   height: 40px;
@@ -107,34 +96,25 @@ button:disabled {
   outline: none;
 }
 
-/* Синий фокус как в браузере (можно оставить дефолт, но пусть будет аккуратно) */
 .page-snackbar .form input[type="number"]:focus {
   outline: 2px solid #2b6cff;
   outline-offset: 0;
 }
-
-/* Fieldset — аккуратная рамка */
 .page-snackbar .form fieldset {
   width: 250px;
   margin: 0;
   border: 1px solid #000;
   box-sizing: border-box;
 }
-
-/* Legend — надпись “в рамке” */
 .page-snackbar .form legend {
   padding: 0 8px;
 }
-
-/* Радио в одну строку, с нормальными отступами */
 .page-snackbar .form fieldset label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-right: 20px;
 }
-
-/* Кнопка на всю ширину */
 .page-snackbar .form button[type="submit"] {
   width: 250px;
   height: 40px;
@@ -143,7 +123,6 @@ button:disabled {
   cursor: pointer;
 }
 
-/* Можно чуть “живости” на hover только если не disabled */
 .page-snackbar .form button[type="submit"]:hover {
   background: #e6e6e6;
 }
